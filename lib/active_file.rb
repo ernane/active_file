@@ -1,7 +1,11 @@
+require 'fileutils'
 require 'active_file/version'
 require 'yaml'
 require 'fileutils'
 require 'brnumeros'
+
+require 'rake'
+import File.expand_path('../tasks/db.rake', __FILE__)
 
 module ActiveFile
   def save
